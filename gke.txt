@@ -1,0 +1,68 @@
+git clone https://github.com/devsujay19/Outer-Body-Of-Calculator.git
+
+gcloud config set project PROJECT_ID
+
+ls
+
+docker run -d -p 566:80 --name my-container nginx:latest
+
+cd Outer-Body-of-Calculator
+
+docker cp . /usr/share/nginx/html/
+
+docker ps
+
+
+docker commit CONTAINER-ID our-website-image:v1
+
+gcloud artifacts locations list
+
+docker images
+
+docker tag our-website-image:v1 asia-south1-docker.pkg.dev/PROJECT-ID/ARTIFACT-REPO/WEB-IMAGE
+
+docker push asia-south1-docker.pkg.dev/PROJECT_ID/ARTIFACT-REPO/IMAGE-NAME
+
+gcloud auth configure-docker asia-south1-docker.pkg.dev
+
+gcloud config set compute/zone asia-south1-c
+
+gcloud container clusters create my-cluster --num-nodes=3 
+
+gcloud container clusters get-credentials my-cluster
+
+kubectl get nodes
+
+kubectl get pods
+
+kubectl get deployment
+
+docker images
+
+kubectl create deployment DEPLOYMENT-NAME --image=asia-south1-docker.pkg.dev/PROJECT/ARTIFACT-REPO/WEB-IMAGE
+
+kubectl get deployment
+
+kubectl get pods
+
+
+
+kubectl expose deployment DEPOYMENT-NAME --type LoadBalancer --port 80 --target-port 80
+
+kubectl get svc
+
+kubectl get replicaset
+
+kubectl get pods
+
+kubectl get deployment
+
+kubectl describe deployment DEPLOYMENT-NAME
+
+kubectl scale deployment/DEPLOYMENT-NAME --replicas=3
+
+kubectl get pods
+
+kubectl autoscale deployment/calc-demo-deployment --cpu-percent=75 --min=1 --max=3
+
+
